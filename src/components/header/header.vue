@@ -19,15 +19,15 @@
           <ul class="list" :class="{active:selectFlag}">
             <router-link tag="li" class="item" to="/home">
               <i class="iconfont iconshouye1"></i>
-              {{currentData[language][0]}}
+              {{currentData[currentLanguage][0]}}
             </router-link>
             <router-link tag="li" class="item" to="/solutions">
               <i class="iconfont iconwen-hao"></i>
-              {{currentData[language][1]}}
+              {{currentData[currentLanguage][1]}}
             </router-link>
             <router-link tag="li" class="item" to="/about">
               <i class="iconfont iconlianxiwomen"></i>
-              {{currentData[language][2]}}
+              {{currentData[currentLanguage][2]}}
             </router-link>
           </ul>
         </div>
@@ -62,7 +62,6 @@ export default {
     },
     toggleMenu() {
       this.selectFlag = !this.selectFlag;
-      console.log(this.selectFlag, "this.selectFlag ");
     }
   }
 };
