@@ -134,9 +134,11 @@ export default {
           background-repeat: no-repeat;
           z-index: 3;
           transition: all 0.3s ease;
+          display: none;
           opacity: 0;
           transform: translateX(100%);
           &.active {
+            display: block;
             opacity: 1;
             transform: translateX(0);
           }

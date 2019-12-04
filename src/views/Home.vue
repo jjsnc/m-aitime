@@ -1,17 +1,12 @@
 <template>
   <div class="home-page">
     <myHead @changeLanguage="changeLanguage"></myHead>
-    <!-- <section class="time-section">
-      <img class="img" src="../../public/images/home-bg-1@2x.png" />
+    <section class="time-section">
+      <img class="img" src="../../public/images/home-1-bg.png" />
       <h3 class="title3">{{currentData[language].timeTitle}}</h3>
-      <a href="#two" class="more-btn btn">{{currentData[language].timeBtnText}}</a>
-      <div class="more-icon">
-          <a href="#two"></a>
-      </div>
     </section>
-    <section class="product-section" id="two">
+    <section class="product-section">
       <h3 class="title-3">{{currentData[language].productTitle1}}</h3>
-      <h6 class="title-6">{{currentData[language].productTitle3}}</h6>
       <ul class="list clearfix">
         <li class="item" :key="index" v-for="(item, index) in currentData[language].productList">
           <div class="iconfont iconfont-item" :class="item.icon"></div>
@@ -38,7 +33,7 @@
         </li>
       </ul>
       <div class="company-info">{{currentData[language].foootInfo}}</div>
-    </section> -->
+    </section>
   </div>
 </template>
 
@@ -173,20 +168,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@keyframes bounce-down {
-  25% {
-    transform: translateY(-10px);
-  }
-  50% {
-    transform: translateY(0);
-  }
-  75% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
 .home-page {
   position: relative;
   .time-section {
@@ -202,58 +183,25 @@ export default {
       top: 45%;
       left: 50%;
       transform: translateX(-50%);
-      line-height: 35px;
-      font-weight: 100;
-      font-size: 20px;
-      color: #fff;
-    }
-    .more-btn {
-      position: absolute;
-      top: 60%;
-      left: 50%;
-      transform: translateX(-50%);
-      display: block;
-      width: 184px;
-      height: 48px;
-      line-height: 48px;
-      background: rgba(0, 182, 203, 0);
-      border: 1px solid rgba(255, 255, 255, 1);
-      font-size: 17px;
       text-align: center;
+      width: 300px;
+      margin: 0 auto;
+      line-height: 22px;
+      font-weight: 100;
+      font-size: 12px;
       color: #fff;
-      border-radius: 30px;
-      text-decoration: none;
-    }
-    .more-icon {
-      position: absolute;
-      top: 80%;
-      left: 50%;
-      margin-left: -20px;
-      width: 40px;
-      height: 32px;
-      background: url("../../public/images/logo@2x.png");
-      background-size: 40px 32px;
-      cursor: pointer;
-      animation: bounce-down 1s linear infinite;
-      a {
-        display: block;
-        width: 100%;
-        height: 100%;
-      }
     }
   }
 
   .product-section {
-    padding-bottom: 220px;
     > .title-3 {
+      margin-top: 26px;
       position: relative;
-      font-size: 48px;
+      font-size: 18px;
       color: #576671;
       text-align: center;
-      text-align: center;
-      padding-top: 130px;
-      padding-bottom: 36px;
       font-weight: 100;
+      padding-bottom: 9px;
       &::before {
         content: " ";
         display: inline-block;
@@ -266,61 +214,62 @@ export default {
         background: #17daa3;
       }
     }
-    .title-6 {
-      padding-top: 30px;
-      font-size: 18px;
-      color: #87949e;
-      text-align: center;
-      padding-bottom: 150px;
-    }
     .list {
       display: flex;
+      padding-top: 18px;
+      flex-wrap: wrap;
+      justify-content: center;
       .item {
-        flex: 1;
+        width: 48%;
         box-sizing: border-box;
-        padding: 0 40px;
+        margin-bottom: 45px;
         .iconfont-item {
           display: block;
           transition: all 0.3s ease;
-          width: 124px;
-          height: 124px;
+          width: 53px;
+          height: 53px;
           margin: 0 auto;
-          line-height: 124px;
+          line-height: 53px;
           border-radius: 50%;
           color: #87949e;
           background: rgba(135, 145, 158, 0.15);
           text-align: center;
-          font-size: 36px;
+          font-size: 14px;
           &:hover {
             color: #fff;
             background: #17daa3;
           }
         }
         .title-3 {
-          font-size: 22px;
+          font-size: 14px;
           color: #000000;
-          padding: 65px 0 36px;
+          padding: 24px 0 16px;
           text-align: center;
-          font-weight: 100;
+          font-weight: 500;
         }
         .text {
-          font-size: 16px;
+          font-size: 12px;
           color: #87949e;
           padding: 0 15px;
           margin: 0 auto;
           line-height: 22px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 2; //行数
+          -webkit-box-orient: vertical;
         }
       }
     }
   }
   .contact-section {
-    padding-bottom: 70px;
+    padding-bottom: 30px;
     > .title-3 {
       position: relative;
-      font-size: 48px;
+      font-size: 18px;
       color: #576671;
       text-align: center;
-      padding-bottom: 36px;
+      padding-bottom: 10px;
       font-weight: 100;
       &::before {
         content: " ";
@@ -336,36 +285,27 @@ export default {
     }
   }
   .footer-section {
-    background: #edeff1;
+    background: #EDEFF1;
     .list {
-      padding-top: 140px;
-      padding-bottom: 220px;
-      padding-left: 60px;
-      padding-right: 60px;
-      display: flex;
-      justify-content: center;
-      align-items: middle;
+      padding-top: 36px;
       .item {
-        flex: 1;
-        display: flex;
-        justify-content: center;
-        max-width: 600px;
+        margin-bottom: 70px;
         .iconfont-item {
-          width: 96px;
-          height: 96px;
-          line-height: 96px;
+          width: 47px;
+          height: 47px;
+          line-height: 47px;
           text-align: center;
-          font-size: 40px;
+          font-size: 19px;
           border: 1px solid #17daa3;
           color: #17daa3;
           background: #fff;
           border-radius: 50%;
         }
         .left-area {
-          padding-top: 70px;
           .iconfont-item.left {
             box-sizing: border-box;
             padding-right: 6px;
+            margin: 0  auto;
           }
           .iconfont-item.right {
             box-sizing: border-box;
@@ -373,43 +313,42 @@ export default {
           }
         }
         .right-area {
-          padding-left: 45px;
           .title-5 {
-            font-size: 40px;
+            font-size: 18px;
+            padding-top: 22px;
+            padding-bottom: 25px;
             color: #576671;
             text-align: center;
-            padding-bottom: 60px;
-            font-weight: 100;
-             text-align: left;
+            font-weight: 500;
+            text-align: center;
           }
           .text {
-            font-size: 20px;
+            font-size: 12px;
             color: #87949e;
-            line-height: 30px;
-            padding-bottom: 50px;
             font-weight: 100;
-            padding-right: 20px;
+            width: 250px;
+            line-height: 22px;
+            margin: 0 auto;
+            text-align: center;
+            padding-bottom: 22px;
           }
           .address {
-            font-size: 20px;
+            font-size: 12px;
             color: #87949e;
             line-height: 25px;
             font-style: inherit;
             font-weight: 100;
-            margin-bottom: 15px;
+            text-align: center;
           }
         }
       }
-      .item:last-child {
-        margin-left: 60px;
-      }
     }
     .company-info {
-      height: 60px;
-      line-height: 60px;
+      height: 30px;
+      line-height: 30px;
       background: #15c492;
       color: #fff;
-      font-size: 7px;
+      font-size: 10px;
       text-align: center;
     }
   }
