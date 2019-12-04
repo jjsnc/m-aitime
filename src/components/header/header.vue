@@ -1,5 +1,6 @@
 <template>
   <div class="header-com">
+    <div class="test"></div>
     <div class="wrap">
       <div class="left-area">
         <img class="img" src="../../../public/images/AITIME@2x.png" width="78px;height:15px;" />
@@ -75,6 +76,11 @@ export default {
   width: 100%;
   top: 0;
   z-index: 999;
+  .test {
+    width: 100px;
+    height: 100px;
+    border:1px solid red;
+  }
   .wrap {
     display: flex;
     height: 56px;
