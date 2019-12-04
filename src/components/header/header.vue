@@ -2,7 +2,7 @@
   <div class="header-com">
     <div class="wrap">
       <div class="left-area">
-        <img class="img" src="../../../public/images/AITIME@2x.png" width="144px;height:28px;" />
+        <img class="img" src="../../../public/images/AITIME@2x.png" width="78px;height:15px;" />
       </div>
       <div class="middle-area"></div>
       <div class="right-area">
@@ -77,8 +77,8 @@ export default {
   z-index: 999;
   .wrap {
     display: flex;
-    height: 130px;
-    line-height: 130px;
+    height: 56px;
+    line-height: 56px;
     .left-area {
       padding-left: 76px;
       flex: 220px;
