@@ -1,7 +1,7 @@
 <template>
   <div class="home-page">
     <myHead @changeLanguage="changeLanguage"></myHead>
-    <section class="time-section">
+    <!-- <section class="time-section">
       <img class="img" src="../../public/images/home-bg-1@2x.png" />
       <h3 class="title3">{{currentData[language].timeTitle}}</h3>
       <a href="#two" class="more-btn btn">{{currentData[language].timeBtnText}}</a>
@@ -38,7 +38,7 @@
         </li>
       </ul>
       <div class="company-info">{{currentData[language].foootInfo}}</div>
-    </section>
+    </section> -->
   </div>
 </template>
 
