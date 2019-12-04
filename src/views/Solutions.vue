@@ -2,10 +2,9 @@
   <div class="home-page">
     <myHead @changeLanguage="changeLanguage"></myHead>
     <section class="time-section">
-      <img class="img" src="../../public/images/soluMultiply@2x.png" />
+      <img class="img" src="../../public/images/solu-1-bg.png" />
       <h3 class="title3">{{currentData[language].timeTitle}}</h3>
       <p class="text-1 text">{{currentData[language].timeContent}}</p>
-      <div class="more-icon"></div>
     </section>
     <section class="product-section">
       <h3 class="title-3">{{currentData[language].productTitle1}}</h3>
@@ -22,6 +21,8 @@
           <div class="iconfont iconfont-item iconfont-item-3"></div>
           <h3 class="title-3">{{currentData[language].productList[2].title}}</h3>
         </li>
+      </ul>
+      <ul class="list clearfix">
         <li class="item">
           <div class="iconfont iconfont-item iconfont-item-4"></div>
           <h3 class="title-3">{{currentData[language].productList[3].title}}</h3>
@@ -32,16 +33,10 @@
         </li>
       </ul>
     </section>
-    <!-- 业务流程 -->
-    <section class="process-section">
-      <h3 class="title-3">{{currentData[language].processTitle}}</h3>
-      <img class="img" v-if="language=='zh'" src="../../public/images/process-zh@2x.png" />
-      <img class="img" v-else src="../../public/images/process@2x.png" />
-    </section>
     <!--  产品优势 -->
     <section class="advantage-section">
       <h3 class="title-3">{{currentData[language].advantageTitle}}</h3>
-      <img class="img" src="../../public/images/programme@2x.png" />
+      <img class="img" src="../../public/images/solu-2-bg.png" />
       <p class="info">{{currentData[language].advantageContnet}}</p>
       <ul class="list clearfix">
         <li class="item" :key="index" v-for="(item, index) in  currentData[language].advantageList">
@@ -51,10 +46,10 @@
         </li>
       </ul>
     </section>
-    <section class="contact-section">
+    <!-- <section class="contact-section">
       <h3 class="title-3">{{currentData[language].contactTitle}}</h3>
-    </section>
-    <section class="footer-section">
+    </section>-->
+    <!-- <section class="footer-section">
       <ul class="list">
         <li class="item" :key="index" v-for="(child, index) in currentData[language].contactList">
           <div class="left-area">
@@ -69,7 +64,7 @@
         </li>
       </ul>
       <div class="company-info">{{currentData[language].foootInfo}}</div>
-    </section>
+    </section>-->
   </div>
 </template>
 
@@ -256,45 +251,33 @@ export default {
     }
     .title3 {
       position: absolute;
-      left: 10%;
-      top: 35%;
-      width: 740px;
-      font-size: 40px;
+      top: 15%;
+      left: 15px;
+      font-size: 16px;
       color: #fff;
     }
     .text {
-      width: 700px;
       position: absolute;
-      left: 10%;
-      top: 50%;
+      top: 33%;
+      left: 15px;
+      width: 280px;
       color: #fff;
-      font-size: 16px;
-      line-height: 35px;
-    }
-    .more-icon {
-      position: absolute;
-      top: 80%;
-      left: 50%;
-      margin-left: -20px;
-      width: 40px;
-      height: 32px;
-      background: url("../../public/images/logo@2x.png");
-      background-size: 40px 32px;
-      cursor: pointer;
-      animation: bounce-down 1s linear infinite;
+      font-size: 8px;
+      line-height: 20px;
     }
   }
 
   .product-section {
     > .title-3 {
       position: relative;
-      font-size: 48px;
+      font-size: 18px;
       color: #576671;
       text-align: center;
       text-align: center;
-      padding-top: 130px;
-      padding-bottom: 36px;
-      font-weight: 100;
+      padding-top: 30px;
+      padding-bottom: 10px;
+      font-weight: 500;
+      margin-bottom: 16px;
       &::before {
         content: " ";
         display: inline-block;
@@ -309,113 +292,74 @@ export default {
     }
     .list {
       display: flex;
-      padding-top: 125px;
       .item {
         flex: 1;
         box-sizing: border-box;
         .iconfont-item {
           display: block;
           transition: all 0.3s ease;
-          width: 80px;
-          height: 80px;
+          width: 40px;
+          height: 40px;
           margin: 0 auto;
-          line-height: 62px;
           color: #87949e;
           text-align: center;
         }
         .iconfont-item-1 {
-          background: url("../../public/images/OCR@2x.png");
-          background-size: 82px 63px;
+          background: url("../../public/images/solu-1.png");
+          background-size: 25px 20px;
           background-position: center center;
           background-repeat: no-repeat;
         }
         .iconfont-item-2 {
-          background: url("../../public/images/identity@2x.png");
-          background-size: 62px 62px;
+          background: url("../../public/images/solu-2.png");
+          background-size: 19px 20px;
           background-position: center center;
           background-repeat: no-repeat;
         }
         .iconfont-item-3 {
-          background: url("../../public/images/Living@2x.png");
-          background-size: 60px 65px;
+          background: url("../../public/images/solu-3.png");
+          background-size: 18px 20px;
           background-position: center center;
           background-repeat: no-repeat;
         }
         .iconfont-item-4 {
-          background: url("../../public/images/Face@2x.png");
-          background-size: 62px 63px;
+          background: url("../../public/images/solu-4.png");
+          background-size: 19px 20px;
           background-position: center center;
           background-repeat: no-repeat;
         }
         .iconfont-item-5 {
-          background: url("../../public/images/risk@2x.png");
-          background-size: 55px 64px;
+          background: url("../../public/images/solu-5.png");
+          background-size: 18px 20px;
           background-position: center center;
           background-repeat: no-repeat;
         }
         .title-3 {
-          font-size: 22px;
+          font-size: 12px;
           color: #000000;
-          padding: 35px 0 36px;
           text-align: center;
           font-weight: 100;
+          padding: 13px 0 36px;
         }
       }
     }
   }
 
-  .process-section {
-    padding-top: 350px;
-    position: relative;
-    > .title-3 {
-      position: absolute;
-      left: 50%;
-      top: 150px;
-      font-size: 48px;
-      transform: translateX(-50%);
-      color: #576671;
-      text-align: center;
-      text-align: center;
-      font-weight: 100;
-      &::before {
-        content: " ";
-        display: inline-block;
-        position: absolute;
-        bottom: -30px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 30px;
-        height: 1px;
-        background: #17daa3;
-      }
-    }
-    .img {
-      display: block;
-      max-width: 100%;
-      margin: 0 auto;
-      border: none;
-      outline: none;
-    }
-  }
 
   .advantage-section {
-    padding-top: 350px;
     position: relative;
     > .title-3 {
-      position: absolute;
-      left: 50%;
-      top: 150px;
-      font-size: 48px;
-      transform: translateX(-50%);
+      position: relative;
+      font-size: 18px;
       color: #576671;
       text-align: center;
       text-align: center;
-      font-weight: 100;
+      margin-bottom: 30px;
       &::before {
         content: " ";
         display: inline-block;
         position: absolute;
-        bottom: -30px;
+        bottom: -10px;
         left: 50%;
         transform: translateX(-50%);
         width: 30px;
@@ -431,13 +375,14 @@ export default {
     }
     .info {
       position: absolute;
+      width: 270px;
       left: 50%;
-      top: 35%;
-      font-size: 18px;
+      top: 100px;
+      text-align: center;
+      font-size: 8px;
       transform: translateX(-50%);
       color: #fff;
-      line-height: 35px;
-      font-weight: 100;
+      line-height: 18px;
     }
     .list {
       width: 100%;
@@ -447,61 +392,57 @@ export default {
       justify-content: space-between;
       flex-direction: row;
       flex-wrap: wrap;
-      padding-top: 128px;
       .item {
-        width: 50%;
+        width: 48%;
         box-sizing: border-box;
-        margin-bottom: 100px;
+        padding: 0 20px;
+        margin-bottom: 20px;
         .iconfont-item {
           display: block;
           transition: all 0.3s ease;
           width: 100%;
-          height: 124px;
-          margin: 0 auto;
-          line-height: 124px;
+          height: 60px;
+          line-height: 60px;
           border-radius: 50%;
           color: #87949e;
           background: rgba(135, 145, 158, 0.15);
           text-align: center;
-          font-size: 36px;
+          font-size: 18px;
         }
         .iconfont-item-1 {
-          background: url("../../public/images/time@2x.png");
-          background-size: 89px 89px;
-          background-position: 30% center;
+          background: url("../../public/images/solu-3-1.png");
+          background-size: 21px 21px;
+          background-position:left center;
           background-repeat: no-repeat;
         }
         .iconfont-item-2 {
-          background: url("../../public/images/accurate@2x.png");
-          background-size: 110px 107px;
-          background-position: 30% center;
+          background: url("../../public/images/solu-3-2.png");
+          background-size: 25px 25px;
+          background-position:left center;
           background-repeat: no-repeat;
         }
         .iconfont-item-3 {
-          background: url("../../public/images/function@2x.png");
-          background-size: 83px 84px;
-          background-position: 30% center;
+          background: url("../../public/images/solu-3-3.png");
+          background-size: 18px 18px;
+          background-position:left center;
           background-repeat: no-repeat;
         }
         .iconfont-item-4 {
-          background: url("../../public/images/Integrate@2x.png");
-          background-size: 85px 79px;
-          background-position: 30% center;
+          background: url("../../public/images/solu-3-4.png");
+          background-size: 20px 18px;
+          background-position:left center;
           background-repeat: no-repeat;
         }
         .title-3 {
-          font-size: 22px;
+          font-size: 14px;
           color: #000000;
-          padding: 30px 0 30px;
-          padding-left: 26%;
           font-weight: 100;
+          padding-bottom: 16px;
         }
         .text {
-          font-size: 16px;
+          font-size: 10px;
           color: #87949e;
-          width: 240px;
-          padding-left: 26%;
-          line-height: 26px;
+          line-height: 22px;
         }
       }
     }
@@ -576,7 +517,7 @@ export default {
             text-align: center;
             padding-bottom: 60px;
             font-weight: 100;
-             text-align: left;
+            text-align: left;
           }
           .text {
             font-size: 20px;
