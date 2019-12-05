@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" :style=styleObj>
     <router-view />
   </div>
 </template>
@@ -9,7 +9,11 @@ export default {
   name: "app",
   data() {
     return {
-      currentCountry: "中文"
+      currentCountry: "中文",
+      styleObj:{
+        "max-width":"750px",
+        "margin": '0 auto'
+      }
     };
   },
   created() {
