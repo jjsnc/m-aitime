@@ -46,10 +46,10 @@
         </li>
       </ul>
     </section>
-    <!-- <section class="contact-section">
+    <section class="contact-section">
       <h3 class="title-3">{{currentData[language].contactTitle}}</h3>
-    </section>-->
-    <!-- <section class="footer-section">
+    </section>
+    <section class="footer-section">
       <ul class="list">
         <li class="item" :key="index" v-for="(child, index) in currentData[language].contactList">
           <div class="left-area">
@@ -64,7 +64,7 @@
         </li>
       </ul>
       <div class="company-info">{{currentData[language].foootInfo}}</div>
-    </section>-->
+    </section>
   </div>
 </template>
 
@@ -348,6 +348,7 @@ export default {
 
   .advantage-section {
     position: relative;
+    padding-bottom: 40px;
     > .title-3 {
       position: relative;
       font-size: 18px;
@@ -447,17 +448,14 @@ export default {
       }
     }
   }
-
   .contact-section {
-    padding-top: 20px;
-    padding-bottom: 70px;
-
+    padding-bottom: 30px;
     > .title-3 {
       position: relative;
-      font-size: 48px;
+      font-size: 18px;
       color: #576671;
       text-align: center;
-      padding-bottom: 36px;
+      padding-bottom: 10px;
       font-weight: 100;
       &::before {
         content: " ";
@@ -473,36 +471,27 @@ export default {
     }
   }
   .footer-section {
-    background: #edeff1;
+    background: #EDEFF1;
     .list {
-      padding-top: 140px;
-      padding-bottom: 220px;
-      padding-left: 60px;
-      padding-right: 60px;
-      display: flex;
-      justify-content: center;
-      align-items: middle;
+      padding-top: 36px;
       .item {
-        flex: 1;
-        display: flex;
-        justify-content: center;
-        max-width: 600px;
+        margin-bottom: 70px;
         .iconfont-item {
-          width: 96px;
-          height: 96px;
-          line-height: 96px;
+          width: 47px;
+          height: 47px;
+          line-height: 47px;
           text-align: center;
-          font-size: 40px;
+          font-size: 19px;
           border: 1px solid #17daa3;
           color: #17daa3;
           background: #fff;
           border-radius: 50%;
         }
         .left-area {
-          padding-top: 70px;
           .iconfont-item.left {
             box-sizing: border-box;
             padding-right: 6px;
+            margin: 0  auto;
           }
           .iconfont-item.right {
             box-sizing: border-box;
@@ -510,43 +499,42 @@ export default {
           }
         }
         .right-area {
-          padding-left: 45px;
           .title-5 {
-            font-size: 40px;
+            font-size: 18px;
+            padding-top: 22px;
+            padding-bottom: 25px;
             color: #576671;
             text-align: center;
-            padding-bottom: 60px;
-            font-weight: 100;
-            text-align: left;
+            font-weight: 500;
+            text-align: center;
           }
           .text {
-            font-size: 20px;
+            font-size: 12px;
             color: #87949e;
-            line-height: 30px;
-            padding-bottom: 50px;
             font-weight: 100;
-            padding-right: 20px;
+            width: 250px;
+            line-height: 22px;
+            margin: 0 auto;
+            text-align: center;
+            padding-bottom: 22px;
           }
           .address {
-            font-size: 20px;
+            font-size: 12px;
             color: #87949e;
             line-height: 25px;
             font-style: inherit;
             font-weight: 100;
-            margin-bottom: 15px;
+            text-align: center;
           }
         }
       }
-      .item:last-child {
-        margin-left: 60px;
-      }
     }
     .company-info {
-      height: 60px;
-      line-height: 60px;
+      height: 30px;
+      line-height: 30px;
       background: #15c492;
       color: #fff;
-      font-size: 7px;
+      font-size: 10px;
       text-align: center;
     }
   }
