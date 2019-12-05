@@ -134,10 +134,10 @@ export default {
           contactTitle: "CONTACT US",
           contactList: [
             {
-              title: "Market Cooperation left",
+              title: "Market Cooperation",
               icon: "iconmianxinggouwuche",
               content:
-                "Media interviews,brand cooperation, market coo perat cooperation, want to know about AITIME, welcome to contact us. ",
+                "Media interviews,brand cooperation, market cooperation, want to know about AITIME, welcome to contact us. ",
               mail: "mailbox：chenfang@aitime.credit ",
               phone: "Tel：+86 17155944982"
             },
@@ -145,7 +145,7 @@ export default {
               title: "Business Cooperation",
               icon: "iconbangongshenling right",
               content:
-                "Business cooperation, we are eager to innovate and lo ok forward to cooperate.want to know about AITIME, welcome to contact us.",
+                "Business cooperation, we are eager to innovate and look forward to cooperate.",
               mail: "mailbox：chenfang@aitime.credit ",
               phone: "Tel：+86 17155944982"
             }
