@@ -115,6 +115,7 @@ export default {
           align-items: center;
           .btn {
             padding: 0 15px;
+            margin-right: 10px;
             width: 20px;
             height: 56px;
             background: url("../../../public/images/menu.png");
