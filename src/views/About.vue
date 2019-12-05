@@ -63,15 +63,14 @@ export default {
               title: "市场合作",
               icon: "iconmianxinggouwuche left",
               content: "媒体采访、品牌合作、市场合作,想了解AITIME,欢迎联系我们",
-              mail: "邮箱：chenfang@aitime.credit  ",
+              mail: "邮箱：chenfang@aitime.credit ",
               phone: "电话：+86 17155944982"
             },
             {
               title: "商务合作",
               icon: "iconbangongshenling right",
-              content:
-                "商务合作,我们渴望创新,期盼合作,想了解AITIME，欢迎联系我们",
-              mail: "邮箱：chenfang@aitime.credit  ",
+              content: "商务合作，我们渴望创新，期盼合作。",
+              mail: "邮箱：chenfang@aitime.credit ",
               phone: "电话：+86 17155944982"
             }
           ],
@@ -188,20 +187,16 @@ export default {
     .text-1 {
       top: 30%;
       font-size: 12px;
- 
     }
     .text-2 {
       top: 45%;
- 
     }
     .text-3 {
       top: 70%;
       font-size: 12px;
- 
     }
     .text-4 {
       top: 80%;
- 
     }
   }
 
@@ -228,7 +223,7 @@ export default {
     }
   }
   .footer-section {
-    background: #EDEFF1;
+    background: #edeff1;
     .list {
       padding-top: 36px;
       .item {
@@ -248,7 +243,7 @@ export default {
           .iconfont-item.left {
             box-sizing: border-box;
             padding-right: 6px;
-            margin: 0  auto;
+            margin: 0 auto;
           }
           .iconfont-item.right {
             box-sizing: border-box;
