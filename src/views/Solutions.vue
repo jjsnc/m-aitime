@@ -187,7 +187,7 @@ export default {
               title: "High Accuracy",
               icon: "iconfont-item-2",
               content:
-                "The core algorithms of each product along the e-KYC pr ocess are specially designed for e-KYC scenarios, with l arge amount of training data collected locally, constan..."
+                "The core algorithms of each product along the e-KYC process are specially designed for e-KYC scenarios, with large amount of training data collected locally, constantly iterating, ensuring the accuracy sufficiently meets customer needs."
             },
             {
               title: "Full Functions",
