@@ -199,7 +199,7 @@ export default {
               title: "Easy of Integrate",
               icon: "iconfont-item-4",
               content:
-                "SDK and API are provided for an effortless integration. Simply integrate the products to form customised e-KY C solution."
+                "SDK and API are provided for an effortless integration. Simply integrate the products to form customised e-KYC solution."
             }
           ],
           contactTitle: "CONTACT US",
