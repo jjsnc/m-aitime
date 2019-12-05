@@ -11,10 +11,14 @@
         <li class="item" :key="index" v-for="(item, index) in currentData[language].productList">
           <div class="iconfont iconfont-item" :class="item.icon"></div>
           <h3 class="title-3">{{item.title}}</h3>
-          <p class="text">{{item.content}}</p>
+          <p class="text" :class="{active:moreFlat}">{{item.content}}</p>
         </li>
       </ul>
+      <div class="more-text" v-if="!moreFlat" @click="ViewMore">
+        <div class="more-btn btn">{{currentData[language].timeBtnText}}</div>
+      </div>
     </section>
+
     <section class="contact-section">
       <h3 class="title-3">{{currentData[language].contactTitle}}</h3>
     </section>
@@ -150,7 +154,8 @@ export default {
           foootInfo:
             "© AITIME Please find the Terms of Service and Privacy and Security Statement regarding AITIME's service"
         }
-      }
+      },
+      moreFlat: false
     };
   },
   created() {
@@ -159,6 +164,9 @@ export default {
   methods: {
     changeLanguage(lang) {
       this.language = lang;
+    },
+    ViewMore() {
+      this.moreFlat = true;
     }
   },
   components: {
@@ -223,7 +231,8 @@ export default {
       .item {
         width: 48%;
         box-sizing: border-box;
-        margin-bottom: 45px;
+        margin-bottom: 36px;
+        padding: 0 15px;
         .iconfont-item {
           display: block;
           transition: all 0.3s ease;
@@ -249,11 +258,11 @@ export default {
           padding: 24px 0 16px;
           text-align: center;
           font-weight: 500;
+          margin:  0 -15px;
         }
         .text {
           font-size: 12px;
           color: #87949e;
-          padding: 0 15px;
           margin: 0 auto;
           line-height: 22px;
           overflow: hidden;
@@ -261,7 +270,31 @@ export default {
           display: -webkit-box;
           -webkit-line-clamp: 3; //行数
           -webkit-box-orient: vertical;
+          &.active {
+            display: initial;
+            overflow: initial;
+            text-overflow: initial;
+            -webkit-line-clamp: initial;
+            -webkit-box-orient: initial;
+          }
         }
+      }
+    }
+    .more-text {
+      text-align: center;
+      padding-bottom: 42px;
+      .more-btn {
+        display: inline-block;
+        width: 80px;
+        height: 20px;
+        line-height: 20px;
+        border: 1px solid #36ddaa;
+        font-size: 12px;
+        text-align: center;
+        color: #17daa3;
+        border-radius: 15px;
+        text-decoration: none;
+        margin: 0 autp;
       }
     }
   }
