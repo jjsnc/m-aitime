@@ -66,13 +66,13 @@ export default {
               title: "AITIME风控",
               icon: "iconwufengxian",
               content:
-                "风控决策贯穿用户借贷的整个周期, 深入贷前、贷中、贷后，构建全..."
+                "风控决策贯穿用户借贷的整个周期，深入贷前、贷中、贷后，构建全面有效的风控系统。"
             },
             {
               title: "AITIME卫士",
               icon: "iconxingzhuang",
               content:
-                "为客户提供反欺诈服务，通过三重 检测以验证申请人数据中的不匹..."
+                "为客户提供反欺诈服务，通过三重检测以验证申请人数据中的不匹配情况，从而降低欺诈性申请率。"
             }
           ],
           contactTitle: "联系我们",
@@ -113,19 +113,19 @@ export default {
               title: "AITIME ENGINE",
               icon: "icon1huojian",
               content:
-                "Credit Decision Engine.Massive d ata,real-time processing,second-l evel decision-making;driving cr..."
+                "Credit Decision Engine.Massive data,real-time processing,second-level decision-making;driving credit risk decision-making for big data intelligence."
             },
             {
               title: "AITIME RISK CONTROL",
               icon: "iconwufengxian",
               content:
-                "The risk control decision runs thr ough the entire cycle of user lend ing.building a comprehensive a..."
+                "The risk control decision runs through the entire cycle of user lending.building a comprehensive and effective risk control system on the whole loan process."
             },
             {
               title: "AITIME GUARDIAN",
               icon: "iconxingzhuang",
               content:
-                "Guardian provides anti-fraud det ection services to be used . The t rifecta of identity verification, e..."
+                "Guardian provides anti-fraud detection services to be used . The trifecta of identity verification, employment data validation, and credit history are used to detect mismatches in the applicant's data, thus lowering the fraudulent application rate."
             }
           ],
           contactTitle: "CONTACT US",
@@ -202,6 +202,7 @@ export default {
       text-align: center;
       font-weight: 100;
       padding-bottom: 9px;
+
       &::before {
         content: " ";
         display: inline-block;
@@ -235,6 +236,8 @@ export default {
           background: rgba(135, 145, 158, 0.15);
           text-align: center;
           font-size: 14px;
+          color: #fff;
+          background: #17daa3;
           &:hover {
             color: #fff;
             background: #17daa3;
@@ -256,7 +259,7 @@ export default {
           overflow: hidden;
           text-overflow: ellipsis;
           display: -webkit-box;
-          -webkit-line-clamp: 2; //行数
+          -webkit-line-clamp: 3; //行数
           -webkit-box-orient: vertical;
         }
       }
@@ -285,7 +288,7 @@ export default {
     }
   }
   .footer-section {
-    background: #EDEFF1;
+    background: #edeff1;
     .list {
       padding-top: 36px;
       .item {
@@ -305,7 +308,7 @@ export default {
           .iconfont-item.left {
             box-sizing: border-box;
             padding-right: 6px;
-            margin: 0  auto;
+            margin: 0 auto;
           }
           .iconfont-item.right {
             box-sizing: border-box;
