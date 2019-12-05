@@ -139,22 +139,23 @@ export default {
     .title3 {
       position: absolute;
       top: 12%;
-      left: 10%;
+      left: 15px;
       font-size: 18px;
       color: #fff;
       font-weight: 100;
+      padding-right: 15px;
     }
     .text {
       position: absolute;
       top: 30%;
-      left: 10%;
+      left: 15px;
       color: #fff;
       font-size: 9px;
       line-height: 22px;
+      padding-right: 15px;
     }
     .text-2 {
       top: 64%;
-      left: 10%;
     }
   }
 
@@ -170,7 +171,7 @@ export default {
     .title3 {
       position: absolute;
       top: 12%;
-      left: 10%;
+      left: 15px;
       font-size: 18px;
       color: #fff;
       font-weight: 100;
@@ -178,28 +179,29 @@ export default {
     .text {
       position: absolute;
       top: 30%;
-      left: 10%;
+      left: 15px;
       color: #fff;
       font-size: 9px;
       line-height: 22px;
+      padding-right: 15px;
     }
     .text-1 {
       top: 30%;
       font-size: 12px;
-      left: 10%;
+ 
     }
     .text-2 {
       top: 45%;
-      left: 10%;
+ 
     }
     .text-3 {
       top: 70%;
       font-size: 12px;
-      left: 10%;
+ 
     }
     .text-4 {
       top: 80%;
-      left: 10%;
+ 
     }
   }
 
