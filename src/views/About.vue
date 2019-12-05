@@ -291,7 +291,7 @@ export default {
       line-height: 30px;
       background: #15c492;
       color: #fff;
-      font-size: 10px;
+      font-size: 8px;
       text-align: center;
     }
   }
