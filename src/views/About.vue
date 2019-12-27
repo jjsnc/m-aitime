@@ -64,14 +64,14 @@ export default {
               icon: "iconmianxinggouwuche left",
               content: "媒体采访、品牌合作、市场合作,想了解AITIME,欢迎联系我们",
               mail: "邮箱：xdn@aitime.credit",
-              phone: "电话：+86 17155944982"
+              phone: "电话：+86 17501685055"
             },
             {
               title: "商务合作",
               icon: "iconbangongshenling right",
               content: "商务合作，我们渴望创新，期盼合作。",
               mail: "邮箱：xdn@aitime.credit",
-              phone: "电话：+86 17155944982"
+              phone: "电话：+86 17501685055"
             }
           ],
           foootInfo: "有关 AITIME 的服务，请参阅服务条款、隐私和安全声明"
@@ -96,7 +96,7 @@ export default {
               content:
                 "Media interviews,brand cooperation, market cooperation, want to know about AITIME, welcome to contact us. ",
               mail: "mail：xdn@aitime.credit",
-              phone: "Tel：+86 17155944982"
+              phone: "Tel：+86 17501685055"
             },
             {
               title: "Business Cooperation",
@@ -104,7 +104,7 @@ export default {
               content:
                 "Business cooperation, we are eager to innovate and look forward to cooperate.",
               mail: "mail：xdn@aitime.credit",
-              phone: "Tel：+86 17155944982"
+              phone: "Tel：+86 17501685055"
             }
           ],
           foootInfo:
