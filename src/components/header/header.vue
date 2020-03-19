@@ -2,7 +2,7 @@
   <div class="header-com">
     <div class="wrap">
       <div class="left-area">
-        <img class="img" src="../../../public/images/logo.png" />
+        <img class="img" src="../../../public/images/logo-2@2x.png" />
       </div>
       <div class="middle-area"></div>
       <div class="right-area">
