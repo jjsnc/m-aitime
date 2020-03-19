@@ -2,7 +2,7 @@
   <div class="home-page">
     <myHead @changeLanguage="changeLanguage"></myHead>
     <section class="time-section">
-      <img class="img" src="../../public/images/home-bg-3.png" />
+      <img class="img" src="../../public/images/m-home-bg.png" />
       <h3 class="title3">{{currentData[language].timeTitle}}</h3>
     </section>
     <section class="product-section">
